@@ -160,54 +160,54 @@ function demanderAge (){
 
 }
 
-demanderAge();
+// demanderAge();
 
-  let poids = prompt("Quel est votre poids en Kg?");
-  let taille = prompt("Quelle est votre taille en m?");
-  poids = parseFloat(poids);
-  taille = parseFloat(taille);
-  console.log(poids, taille);
+//   let poids = prompt("Quel est votre poids en Kg?");
+//   let taille = prompt("Quelle est votre taille en m?");
+//   poids = parseFloat(poids);
+//   taille = parseFloat(taille);
+//   console.log(poids, taille);
 
-  function calculerIMC () {
+//   function calculerIMC () {
 
-  }
+//   }
 
-let poids = prompt("Quel est votre poids en Kg?");
-let taille = prompt("Quelle est votre taille en m?");
+// let poids = prompt("Quel est votre poids en Kg?");
+// let taille = prompt("Quelle est votre taille en m?");
 
-poids = parseFloat(poids);
-taille = parseFloat(taille);
+// poids = parseFloat(poids);
+// taille = parseFloat(taille);
 
-console.log(poids, taille);
+// console.log(poids, taille);
 
-function calculerIMC() {
-    let resultatImc = poids/(taille**2);
-    return resultatImc;
-}
+// function calculerIMC() {
+//     let resultatImc = poids/(taille**2);
+//     return resultatImc;
+// }
 
-calculerIMC(poids, taille)
+// calculerIMC(poids, taille)
 
-let afficherImc = calculerIMC(poids, taille);
+// let afficherImc = calculerIMC(poids, taille);
 
-alert("Votre IMC est : " + afficherImc);
-console.log(calculerIMC(poids, taille));
+// alert("Votre IMC est : " + afficherImc);
+// console.log(calculerIMC(poids, taille));
 
-let poids = prompt("Quel est votre poids en kg?");
-let taille = prompt("Quelle est votre taille en mètre");
+// let poids = prompt("Quel est votre poids en kg?");
+// let taille = prompt("Quelle est votre taille en mètre");
 
-function calculerIMC(poids, taille) {
+// function calculerIMC(poids, taille) {
 
-    let tailleCalculer = Math.pow(taille, 2);
-    let resultatImc = poids / tailleCalculer;
+//     let tailleCalculer = Math.pow(taille, 2);
+//     let resultatImc = poids / tailleCalculer;
 
-    return resultatImc;
+//     return resultatImc;
 
-}
+// }
 
-let afficherImc = calculerIMC(poids, taille);
-alert("Votre IMC est : " + afficherImc);
+// let afficherImc = calculerIMC(poids, taille);
+// alert("Votre IMC est : " + afficherImc);
 
-console.log(calculerIMC(poids, taille));
+// console.log(calculerIMC(poids, taille));
 
 
 
