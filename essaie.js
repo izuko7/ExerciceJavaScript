@@ -1,9 +1,315 @@
 
-let mesFilms = [
-    ["Batman", "Euphoria", "Flash", "Kirikou"],
-     ["1", "2", "3","4"]
-];
-console.log(mesFilms[0][0]);
+function addition(...nombre){
+    let resultat = 0;
+
+    nombre.forEach(nombre => {
+        resultat += nombre;
+    });
+    console.log(resultat)
+}
+
+addition(2,5,3,4);
+
+// let utilisateurs = new Map();
+
+// utilisateurs.set('Iphone',{
+//     serie : '12',
+//     stockage : '128gb',
+//     taille : '14pc Oled',
+// })
+
+// utilisateurs.set('Xiaomi',{
+//     serie : 'P64',
+//     stockage : '64gb',
+//     taille : '14pc',
+// })
+
+// utilisateurs.set('Tecno',{
+//     serie : 'Camon 40',
+//     stockage : '128gb',
+//     taille : '16pc',
+// })
+
+// utilisateurs.delete('Tecno')
+
+// console.log(utilisateurs)
+
+
+
+
+
+
+
+
+
+
+
+
+// list1 = ["alice@gmail.com", "bob@yahoo.fr", "charles@outlook.com"]
+// list2 = ["bob@yahoo.fr", "denis@gmail.com", "alice@gmail.com"]
+// console.log(list1)
+// console.log(list2)
+
+// let guestList = new Set(list1, list1)
+// guestList.add("eve@icloud.com")
+// guestList.delete("denis@gmail.com")
+
+// if (guestList.has("charles@outlook.com")) {
+//     console.log("le mail est bien là ")
+// }else{
+//     console.log("le mail n'est pas là")
+// }
+
+
+// console.log("il y'a " + guestList.size + " invité")
+// console.log(guestList)
+// console.log(Array.from(guestList));
+
+
+
+
+
+// const nbre = prompt("Entrer des nombre")
+
+// console.log(nbre.split(" "))
+
+// const newNombre = nbre.split(" ")
+
+// const tab = newNombre.map((i) => parseInt(i))
+// console.log(tab)
+
+// function sommeTableau(tab){
+//     if (tab.length === 0){
+//         return 0;
+//     }else{
+//         return tab[0] + sommeTableau(tab.slice(1));
+//     }
+// }
+
+// console.log(sommeTableau(tab))
+// let mesFilms = {
+//     titre : 'Batman',
+//     duree : 3540,
+//     type : 'aventure',
+//     aboyer: function()  {
+//         console.log("ouaf ouaf");
+//      }
+// }
+// console.log(mesFilms)
+// mesFilms.aboyer()
+
+// function timer (secondes) {
+//     if(secondes > 0){
+//         console.log(secondes)
+//         timer(secondes - 1)
+//     } else {
+//         console.log(secondes)
+//     }
+// }
+
+// timer(10);
+
+// const tab = ['1', '2', '3', '4']
+// console.log(tab)
+
+// // function nbrToString (x){
+// //     return x.toString()
+// // }
+
+// const tab2 = tab.map((i) => parseInt(i))
+
+// console.log(tab2)
+
+// function sommeTableau(tab){
+//     if (tab === ([])){
+//         console.log(tab)
+//         sommeTableau(tab[0].lenght + )
+//     }else{
+//         console.log(tab)
+//     }
+// }
+
+// let tab = [4,10,6]
+
+// function sommeTableau(tab){
+//     if (tab.length === 0){
+//         return 0;
+
+//     }else{
+//         return tab[0] + sommeTableau(tab.slice(1));
+        
+//     }
+// }
+
+// console.log(sommeTableau(tab))
+
+
+// let tab = [1, 3, 2];
+
+// function sommeTableau(tab) {
+//     if (tab.length === 0) {
+//         return 0; // Cas de base : le tableau est vide
+//     } else {
+//         // On prend le premier chiffre + on recommence avec le reste
+//         return tab[0] + sommeTableau(tab.slice(1));
+//     }
+// }
+
+// // On affiche le résultat de l'appel avec notre variable 'tab'
+// console.log(sommeTableau(tab)); // Affiche : 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let panier = ['fraise', 'banane', 'poire', 'orange']
+
+// for (const fruit of panier) {
+//     console.log(fruit)
+//     console.log(panier.indexOf(fruit))
+// }
+// console.log(panier)
+
+// addition(3,8)
+
+// function addition(a,b){
+//     console.log(a+b);
+// }
+
+// addition(5,10)
+
+// const additionFlechee = (a,b) => console.log(a*b);
+
+// additionFlechee(3,3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let leTableau = ["Mark", "Jean", "Victor", "Paul"]
+// leTableau.push('Kouamé')
+// leTableau.unshift('Ami')
+// leTableau.pop()
+// console.log(leTableau)
+// console.log(leTableau.indexOf('Mark'))
+
+// let tableau1 = ["1", "2", "3", "4", "5", "6"]
+// tableau1.splice(1, 3, "10")
+// console.log(tableau1)
+
+// let Tableau2D = [
+//     ["Jeff", "Bill", "Cole"],
+//     ["Bezos", "Gate", "Palmer"]
+// ]
+
+// Tableau2D.splice(2, 0, ['10', '20', '30'])
+// console.log(Tableau2D)
+
+// let monTableauAssociatif = {
+//     'prenom' : 'Cole',
+//     'nom' : 'Palmer',
+//     'poste' : 'Ailier'
+// }
+//monTableauAssociatif['nom'] = 'Jinir'
+//delete(monTableauAssociatif.prenom)
+//console.log(monTableauAssociatif)
+// 
+
+// let listeMots = ["Pétunia", "Cachalot", "Serviette" , "Gros"]
+// let listePhrases = ["La vie, l'univers et le reste", "Merci pour le poisson", "Pas de Panique"]
+// let score = 0
+// let choix
+
+// while( choix !== "mots" && choix !== "phrases"){
+//      choix = prompt("Faite un choix entre mots et phrases")
+// }
+
+// if(choix === "mots"){
+//     for(let i = 0; i < listeMots.length; i++){
+//         let motUtilisateurs = prompt("Entrer le mot : " + listeMots[i])
+//         if(motUtilisateurs === listeMots[i]){
+//             score++
+//         }
+//     }
+//     alert("bravo votre sscore est : " + score)
+    
+// } else{
+//     for(let i = 0; i < listePhrases.length; i++){
+//         let motUtilisateurs = prompt("Entrer la phrase : " + listePhrases[i])
+//         if(motUtilisateurs === listePhrases[i]){
+//             score++
+//         }
+//     }
+//     alert("bravo votre sscore est : " + score)
+// }
+
+// if(choix === "mots"){
+//     for(let i; listeMots.length[i]; i++){
+//         motUtilisateurs = prompt("Entrer le mot : " + listeMots[i])
+//         if(motUtilisateurs === listeMots[i]){
+//         score++
+//         }
+//     }
+// }
+// let motUtilisateurs = prompt("Entrer le mot : " + listeMots[0])
+
+// if(motUtilisateurs === listeMots[0]){
+//     score++
+// }
+
+// motUtilisateurs = prompt("Entrer le mot : " + listeMots[1])
+// if(motUtilisateurs === listeMots[1]){
+//     score++
+// }
+
+// motUtilisateurs = prompt("Entrer le mot : " + listeMots[2])
+// if(motUtilisateurs === listeMots[2]){
+//     score++
+// }
+
+// motUtilisateurs = prompt("Entrer le mot : " + listeMots[3])
+// if(motUtilisateurs === listeMots[3]){
+//     score++
+// }
+
+// if(score > 2){
+//     alert("Bravo votre score est : " + score)
+// } else{
+//     alert("Faite plus d'effort votre score est : " + score)
+// }
+
 
 
 // let nombreCaractere = prompt("Combien de caractère voulez-vous ?")
