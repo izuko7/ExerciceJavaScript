@@ -1,3 +1,5 @@
+let nbre = prompt('Entrer plusieurs nombres')
+nbre=nbre.split(" ").map(Number)
 
 function addition(...nombre){
     let resultat = 0;
@@ -8,7 +10,7 @@ function addition(...nombre){
     console.log(resultat)
 }
 
-addition(2,5,3,4);
+addition(...nbre);
 
 // let utilisateurs = new Map();
 
